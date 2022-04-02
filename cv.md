@@ -25,4 +25,23 @@ Student of BSU(RFCT). I hope to become a frontend developer.
 * CSS
 * JS(basic lvl)
 
+***
+
+## Language:
+
+* __English(A2)__
+
+***
+
+## Code:
+    abstract class ShipFactory{
+    public string Name { get; set; }
+    public ShipFactory(){ }
+    abstract public Ship Create(int Id, bool Rotation,
+    int X_coo, int Y_coo);
+    }
+
+## My projects:
+https://Pixlerx.github.io/rsschool-cv/cv
+
 [Вверх](#anchor)
