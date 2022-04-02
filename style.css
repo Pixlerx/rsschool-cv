@@ -1,0 +1,239 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html{
+	background-image: url(img/background.jpg);
+	background-size: cover;
+	scroll-behavior: smooth; 
+}
+
+body{
+	min-height: 110vh;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+}
+
+.header{
+	background-color: #001877;
+}
+
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	min-height: 50px;
+}
+
+.nav-ul{
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-link{	
+	position: relative;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 20px;
+  	font-weight: 300;
+  	line-height: 50px;
+  	color:aliceblue;
+}
+
+.main {
+	margin-bottom: auto;
+	scroll-behavior: smooth;
+  }
+
+#wrapper{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+
+#biography{
+ 	width: 33%;
+ 	margin: 0 auto;
+ 	padding: 10px;
+	box-shadow: 5px 5px 5px 5px white;
+	justify-content: space-between;
+	overflow:hidden;
+} 
+
+h1{
+	font-family:'Courier New';
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+.photo{
+    margin-left: 10px;
+    margin-right: auto;
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 50%;
+	filter: grayscale(0.2) brightness(1.05);
+	transition: .3s;
+}
+.photo:hover{
+	transform: scale(1.1);
+	}
+
+.fio{
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: top;
+	margin: 40px 20px;
+	text-align:center;
+	color: white;
+}
+
+
+h2{
+	font-family:'Courier New';
+	text-align: center;
+	color: white;
+}
+#contacts{
+	overflow: hidden;
+	width: 25%;
+	height: fit-content;
+	object-fit: cover;
+	padding: 5px;
+	box-shadow: 5px 5px 5px 5px white;
+	color: white;
+}
+.icon{
+	margin-right: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+ul.contacts_list li{
+	font-size: 20px;
+	margin: 10px 0 10px 0;
+	list-style: none;
+}
+h3{
+	font-family:'Courier New';
+	text-align: center;
+	color: white;
+}
+#skills{
+	overflow: hidden;
+	width: 25%;
+	height:fit-content;
+	padding: 5px;
+	box-shadow: 5px 5px 5px 5px white;
+	color: white;
+	font-size: 20px;
+}
+#skills .link{		
+	font-style: italic;
+	list-style: circle;
+	margin: 5px;
+	padding: 0;
+}
+
+#container-center{
+	display: flex;
+	justify-content: left;
+	margin: 45px 20px;
+}
+#work{
+	width: auto;
+	height: fit-content;
+	object-fit: cover;
+	padding: 5px;
+	box-shadow: 5px 5px 5px 5px white;
+	color: white;
+	overflow: hidden;
+}
+pre{
+	color:white;
+	font-size: 15px;
+	text-align: left;
+	padding: 0 5px;
+}
+
+#english{
+	width: 25%;
+	height: 100px;
+	object-fit: cover;
+	padding: 20px;
+	margin: 10px 0 20px auto;
+	box-shadow: 5px 5px 5px 5px white;
+	color: white;
+	overflow: hidden;
+}
+#english p{
+	font-size: 20px;
+	font-style: italic;
+}
+
+.footer {
+	background-color:#001877;
+	padding: 20px;  
+}
+  
+.container-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	color: #fff;
+}
+
+
+
+hr{
+	width: 50%;
+	height: 2px;
+	background-color: red;
+	border: 0;
+	margin: 0 25%;
+}
+#wrapper #contacts a{
+	color:white;
+	word-wrap:break-word;
+}
+
+#wrapper #contacts a:hover{
+	color:grey;
+}
+
+.nav-link::after {
+	content: "";
+	position: absolute;
+	left: 12px;
+	bottom: 10px;
+	width: calc(100% - 24px);
+	height: 2px;
+	background-color: grey;
+	opacity: 0;
+	transition: .5s;
+}
+.nav-link:hover::after{
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes slidein {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: calc(100% - 24px);
+	}
+  }
+
+.header .container .nav-link:hover{
+	color:gray;
+}
